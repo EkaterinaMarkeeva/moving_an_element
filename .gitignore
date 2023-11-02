@@ -1,7 +1,9 @@
-doc
-dist
-README.md
 .idea
+Thumbs.db*
+.DS_Store*
+HELP.md
+dist
+doc
 
 # Logs
 logs
@@ -83,7 +85,3 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
-
-# Thumbnails
-Thumbs.db
-Thumbs.db:encryptable
