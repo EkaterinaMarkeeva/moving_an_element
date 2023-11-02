@@ -13,18 +13,10 @@ export default class GameController {
   }
 
   changesGoblinPosition() {
-    let counter = 0;
-    
-    const goblinsInterval = setInterval(() => {
+    setInterval(() => {
       this.position = this.createPosition(0, this.gamePlay.boardSize - 1, this.gamePlay.boardSize, this.position);
 
       this.gamePlay.drawGoblin(this.position);
-      
-      counter += 1;
-      
-      if (counter > 100) {
-        clearInterval(goblinsInterval);
-      }
     }, 5000);
   }
 
